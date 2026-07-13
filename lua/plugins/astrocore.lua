@@ -37,16 +37,16 @@ return {
     },
     -- vim options can be configured here
     options = {
-      opt = { -- vim.opt.<key>
-        relativenumber = true, -- sets vim.opt.relativenumber
-        number = true, -- sets vim.opt.number
-        spell = false, -- sets vim.opt.spell
-        signcolumn = "yes", -- sets vim.opt.signcolumn to yes
-        wrap = false, -- sets vim.opt.wrap
-        shell = "powershell", -- sets vim.opt.shell
-        shellcmdflag = "-command", -- sets vim.opt.shellcmdflag
-        shellquote = "\"", -- sets vim.opt.shellquote
-        shellxquote = "", -- sets vim.opt.shellxquote
+      opt = {
+        relativenumber = true,
+        number = true,
+        spell = false,
+        signcolumn = "yes",
+        wrap = false,
+        shell = "/bin/bash",       -- or "/usr/bin/zsh", "/usr/bin/fish"
+        shellcmdflag = "-c",
+        shellquote = "",
+        shellxquote = "",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
